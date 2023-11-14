@@ -1,0 +1,10 @@
+
+.myCard{
+    display: flex;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    
+}
