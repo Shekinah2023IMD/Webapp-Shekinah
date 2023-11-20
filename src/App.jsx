@@ -2,15 +2,17 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Hello } from "./Hello";
 import { Card } from './Card/Card.jsx'; 
 import { Hooks } from './Hooks/Hooks';
+import Navbar  from './Navbar/Navbar.jsx'
 
 function App() {
   const [count, setCount] = useState(0) 
 
   return (
-    <>
+    <> 
+    <Navbar> 
+    </Navbar>
     <Hooks />
     {/*
     <Hello  name={"World"} question={"how are you?"}/> 
@@ -27,6 +29,7 @@ function App() {
         link={"https://vitejs.dev"}
         logo={<img src={viteLogo} alt='vite Logo'/>}
       />
+     
       {/*
       <div>
         <a href="https://vitejs.dev">
@@ -53,6 +56,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>*/}
+      
     </>
   )
 }

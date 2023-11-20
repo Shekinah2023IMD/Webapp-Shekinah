@@ -8,7 +8,7 @@ export function Card({ logo, title, link }) {
           Link to {""}
         </a>
         {logo}
-      </div>
+      </div> 
     );
   }
   
