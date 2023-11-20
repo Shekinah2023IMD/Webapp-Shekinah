@@ -6,7 +6,7 @@ body {
 
 .nav {
     background-color: black;
-    width: 50rem;
+    width: 90vw;
     height: 3rem;
     display: flex;
     justify-content: space-between;
