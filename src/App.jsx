@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Hello } from './Hello.jsx';
 import { Card } from './Card/Card.jsx'; 
 import { Hooks } from './Hooks/Hooks';
 import Navbar  from './Navbar/Navbar.jsx'
@@ -14,11 +15,12 @@ function App() {
     <Navbar> 
     </Navbar>
     <Hooks />
-    {/*
+    
     <Hello  name={"World"} question={"how are you?"}/> 
     <Hello  name={"Earth"}/>
     <Hello  name={"Sheki"}/>
-  */}
+  
+  <div className='myCardContainer'>
     <Card
         title={"React"}
         link={"https://react.dev"}
@@ -29,7 +31,7 @@ function App() {
         link={"https://vitejs.dev"}
         logo={<img src={viteLogo} alt='vite Logo'/>}
       />
-     
+     </div>
       {/*
       <div>
         <a href="https://vitejs.dev">
@@ -47,10 +49,12 @@ function App() {
         </button>
        
 
-
-        <p>
+        {/*
+           <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
+*/}
+       
       </div>
        {/*
       <p className="read-the-docs">

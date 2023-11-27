@@ -1,14 +1,32 @@
 import './Navbar.css'
+import { Link, Outlet } from 'react-router-dom'
 export default function Navbar() {
-    return <nav className="nav">
-        <a href="./" className="Site-title">Sitename</a>
-        <ul>
-         <li>
-            <a>Page</a>
-         </li>
-         <li>
-             <a>secondPage</a>
-         </li>
-        </ul>
-    </nav>
+    return (
+        <nav className="nav">
+            <a className="Site-title">Sitetitel</a>
+            <ul>
+                <li>
+                    <Link to="/Hello">Hello</Link>
+                </li>
+            </ul>
+            <ul>
+                <li>
+          <Link to="/cards" >
+            Card
+          </Link>   
+                </li>
+            </ul>
+        
+          <ul>
+            <li>
+              <Link to="/selectors">Selectors</Link>
+            </li>
+            <li>
+              <Link to="/Hooks">Hooks</Link>
+            </li>
+          </ul>
+          <Outlet/>
+        </nav>
+      );
+    
 }

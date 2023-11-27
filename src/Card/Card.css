@@ -1,12 +1,16 @@
 
 .myCard{
     display: flex;
+    max-width: 50vh;
     border-style: solid;
     border-width: 0.5px;
     border-radius: 5px;
     text-align: center;
     justify-content: center;
     color: black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
     
 }
 
