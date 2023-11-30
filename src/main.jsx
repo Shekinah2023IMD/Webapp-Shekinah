@@ -8,6 +8,7 @@ import Navbar from './Navbar/Navbar.jsx'
 import { Hooks } from './Hooks/Hooks.jsx'
 import { Card } from './Card/Card.jsx'
 import { Hello } from './Hello.jsx'
+import { Vacation } from './Vacation/Vacation.jsx'
 
 const router = createBrowserRouter ([
   {
@@ -27,10 +28,6 @@ const router = createBrowserRouter ([
     element: <Hooks />,
   },
   {
-    path: "/cards",
-    element: <Card />,
-  },
-  {
     path: "/selectors",
     element: (
       <Card
@@ -40,6 +37,10 @@ const router = createBrowserRouter ([
       />
     )
   },
+  {
+   path: "/vacation",
+   element: <Vacation/>
+  }
 ],
 },
 ]);
